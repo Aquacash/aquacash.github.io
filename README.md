@@ -1,4 +1,4 @@
-# 💎<div align="center">
+# <div align="center">
   <img src="AquaCash_Logo_200x200.png" width="200" alt="Aqua Cash Logo">
   <h1>Aqua Cash (AQU) - Official Project Roadmap</h1>
 </div>
