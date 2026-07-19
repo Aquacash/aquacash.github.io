@@ -1,4 +1,8 @@
-# 💎 Aqua Cash (AQU) - Official Project Roadmap
+# 💎<div align="center">
+  <img src="AquaCash_Logo_200x200.png" width="200" alt="Aqua Cash Logo">
+  <h1>Aqua Cash (AQU) - Official Project Roadmap</h1>
+</div>
+
 
 Aqua Cash is a community-driven token built on the Binance Smart Chain (BSC), designed to foster long-term value through liquidity stability and strategic supply management.
 
