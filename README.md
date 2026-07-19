@@ -1,4 +1,9 @@
 # 🌊 Aqua Cash (AQU) - Official Project Roadmap
+## 🚀 Overview
+Aqua Cash is a community-driven token built on the Binance Smart Chain (BSC), designed to foster long-term value through liquidity stability and strategic supply management.
+
+**[📊 View Live Transactions on BscScan](https://bscscan.com/token/YOUR_TOKEN_CONTRACT_ADDRESS_HERE)**
+*(Replace the link above with your actual token address link from BscScan)*
 
 ## 🚀 Overview
 Aqua Cash is a community-driven token built on the Binance Smart Chain (BSC), designed to foster long-term value through liquidity stability and strategic supply management.
