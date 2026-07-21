@@ -4,193 +4,63 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aqua Cash (AQU) | Official Website</title>
-    
-    <!-- Favicon -->
-    <link rel="icon" type="image/png" href="AquaCash_Logo_200x200.png">
-    
+    <link rel="icon" type="image/png" href="logo.png">
     <style>
-        body { 
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; 
-            line-height: 1.6; 
-            max-width: 800px; 
-            margin: 40px auto; 
-            padding: 20px; 
-            color: #333; 
-            background-color: #f4f7f6;
-        }
-        .container { 
-            border: 1px solid #e0e0e0; 
-            padding: 35px; 
-            border-radius: 16px; 
-            background-color: #ffffff; 
-            box-shadow: 0 10px 25px rgba(0,0,0,0.05);
-            text-align: center;
-        }
-        .logo {
-            width: 160px;
-            height: auto;
-            margin: 0 auto 20px auto;
-            display: block;
-            border-radius: 16px;
-            transition: transform 0.3s ease;
-        }
-        .logo:hover {
-            transform: scale(1.05);
-        }
-        h1 { 
-            color: #0d47a1; 
-            margin-top: 10px;
-            margin-bottom: 5px;
-            font-weight: 800;
-        }
-        .subtitle {
-            font-size: 1.05em;
-            color: #555;
-            margin-bottom: 30px;
-        }
-        .section-title {
-            text-align: left;
-            margin-top: 30px;
-            margin-bottom: 12px;
-            color: #1a237e;
-            border-bottom: 2px solid #e3f2fd;
-            padding-bottom: 5px;
-        }
-        .project-info {
-            text-align: left;
-            background: #f8f9fa;
-            padding: 20px;
-            border-radius: 10px;
-            border-left: 5px solid #2196f3;
-            margin-bottom: 30px;
-        }
-        .contract-box { 
-            background: #e3f2fd; 
-            border: 2px dashed #2196f3;
-            padding: 20px; 
-            border-radius: 12px;
-            font-family: 'Courier New', Courier, monospace; 
-            word-break: break-all; 
-            margin: 25px 0;
-            cursor: pointer;
-            transition: all 0.2s ease;
-        }
-        .contract-box:hover {
-            background: #bbdefb;
-            border-style: solid;
-        }
-        .contract-title {
-            font-weight: bold;
-            color: #0d47a1;
-            margin-bottom: 10px;
-            font-family: sans-serif;
-            font-size: 1em;
-        }
-        .contract-address {
-            font-size: 1.1em;
-            color: #000;
-            font-weight: bold;
-        }
-        .copy-hint {
-            font-size: 0.85em;
-            color: #1976d2;
-            margin-top: 8px;
-            font-family: sans-serif;
-            font-weight: 500;
-        }
-        .links-list {
-            text-align: left;
-            list-style: none;
-            padding: 0;
-        }
-        .links-list li {
-            margin-bottom: 12px;
-            padding-left: 10px;
-        }
-        .links-list a {
-            color: #2196f3;
-            text-decoration: none;
-            font-weight: 600;
-        }
-        .links-list a:hover {
-            color: #0d47a1;
-            text-decoration: underline;
-        }
-        .footer { 
-            margin-top: 40px; 
-            font-size: 0.9em; 
-            color: #999; 
-            border-top: 1px solid #eee;
-            padding-top: 20px;
-        }
-        #toast {
-            visibility: hidden;
-            min-width: 250px;
-            background-color: #1b5e20;
-            color: #fff;
-            text-align: center;
-            border-radius: 8px;
-            padding: 12px;
-            position: fixed;
-            z-index: 1000;
-            left: 50%;
-            bottom: 40px;
-            transform: translateX(-50%);
-            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-            font-weight: bold;
-        }
-        #toast.show {
-            visibility: visible;
-            animation: fadein 0.4s, fadeout 0.5s 2.5s;
-        }
-        @keyframes fadein { from { bottom: 0; opacity: 0; } to { bottom: 40px; opacity: 1; } }
-        @keyframes fadeout { from { bottom: 40px; opacity: 1; } to { bottom: 0; opacity: 0; } }
+        :root { --primary: #007bff; --bg: #f8f9fa; --text: #333; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; margin: 0; padding: 20px; background-color: var(--bg); color: var(--text); }
+        .container { max-width: 800px; margin: 40px auto; padding: 30px; background: white; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); text-align: center; }
+        .logo { width: 120px; margin-bottom: 20px; }
+        h1 { color: #004085; margin-bottom: 10px; }
+        .contract-box { background: #eef2f7; border: 2px dashed var(--primary); padding: 15px; border-radius: 10px; margin: 20px 0; cursor: pointer; position: relative; transition: 0.3s; }
+        .contract-box:hover { background: #e2e8f0; }
+        code { word-break: break-all; font-size: 0.9em; color: #d63384; font-weight: bold; }
+        .btn { display: inline-block; padding: 10px 25px; margin: 10px; border-radius: 25px; text-decoration: none; font-weight: bold; transition: 0.3s; border: none; cursor: pointer; }
+        .btn-primary { background: var(--primary); color: white; }
+        .btn-outline { border: 2px solid var(--primary); color: var(--primary); }
+        .btn:hover { opacity: 0.8; transform: translateY(-2px); }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; margin-top: 30px; }
+        .card { padding: 20px; background: #fff; border-bottom: 4px solid var(--primary); box-shadow: 0 4px 6px rgba(0,0,0,0.05); border-radius: 10px; }
+        .tokenomics-title { margin-top: 50px; border-top: 1px solid #eee; padding-top: 30px; }
+        .footer { margin-top: 50px; font-size: 0.85em; color: #666; }
+        #copy-toast { visibility: hidden; background: #28a745; color: white; padding: 10px; border-radius: 5px; position: fixed; top: 20px; right: 20px; }
     </style>
 </head>
 <body>
 
+<div id="copy-toast">Address Copied! ✅</div>
+
 <div class="container">
-    <!-- لوگو با نام دقیق فایل موجود در مخزن -->
-    <img src="AquaCash_Logo_200x200.png" alt="Aqua Cash Logo" class="logo">
-    
+    <img src="logo.png" alt="Aqua Cash Logo" class="logo">
     <h1>Aqua Cash (AQU)</h1>
-    <p class="subtitle">Decentralized utility token designed for secure and efficient smart contract interactions on the <strong>BNB Smart Chain (BSC)</strong>.</p>
-    
-    <!-- دکمه کپی کانترکت -->
+    <p>Secure and efficient utility token on the <strong>BNB Smart Chain (BSC)</strong>.</p>
+
+    <!-- Wallet Connect Button -->
+    <button class="btn btn-primary" onclick="connectWallet()">Connect Wallet</button>
+    <a href="https://bscscan.com/token/0x1Ca2fcD10477604F291525c54c65a6B3E7485303" target="_blank" class="btn btn-outline">View on BscScan</a>
+
     <div class="contract-box" onclick="copyAddress()">
-        <div class="contract-title">Official Contract Address</div>
-        <div class="contract-address" id="contractAddress">0x1Ca2fcD10477604F291525c54c65a6B3E7485303</div>
-        <div class="copy-hint">🖱️ Click to copy address</div>
+        <strong>Official Contract Address:</strong><br>
+        <code id="contract">0x1Ca2fcD10477604F291525c54c65a6B3E7485303</code>
+        <p style="font-size: 0.8em; margin: 5px 0 0;">🖱️ Click to copy address</p>
     </div>
 
-    <h3 class="section-title">Project Information</h3>
-    <div class="project-info">
-        <p>Aqua Cash (AQU) is dedicated to providing real utility within the BSC ecosystem. Our mission is to build a secure, transparent, and community-driven financial tool for the decentralized world.</p>
+    <h2 class="tokenomics-title">Tokenomics</h2>
+    <div class="grid">
+        <div class="card">
+            <h3>40%</h3>
+            <p>Liquidity Pool (Locked)</p>
+        </div>
+        <div class="card">
+            <h3>30%</h3>
+            <p>Token Burn 🔥</p>
+        </div>
+        <div class="card">
+            <h3>20%</h3>
+            <p>Ecosystem Development</p>
+        </div>
+        <div class="card">
+          <h3>10%</h3>
+            <p>Team & Marketing</p>
+        </div>
     </div>
 
-    <h3 class="section-title">Official Links</h3>
-    <ul class="links-list">
-        <li>🌐 <strong>GitHub Repository:</strong> <a href="https://github.com/aquacash" target="_blank">github.com/aquacash</a></li>
-        <li>📧 <strong>Official Email:</strong> <a href="mailto:aqua.cash@tutamail.com">aqua.cash@tutamail.com</a></li>
-    </ul>
-
-    <div class="footer">
-        &copy; 2026 Aqua Cash Project. All rights reserved.
-    </div>
-</div>
-
-<div id="toast">✅ Contract Address Copied!</div>
-
-<script>
-function copyAddress() {
-    const address = document.getElementById('contractAddress').innerText;
-    navigator.clipboard.writeText(address).then(() => {
-        const toast = document.getElementById('toast');
-        toast.className = "show";
-        setTimeout(() => { toast.className = toast.className.replace("show", ""); }, 3000);
-    });
-}
-</script>
-
-</body>
-</html>
