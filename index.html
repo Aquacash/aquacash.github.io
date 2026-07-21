@@ -4,46 +4,198 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aqua Cash (AQU) | Official Website</title>
+    
+    <!-- Favicon (آیکون تب مرورگر) -->
+    <link rel="icon" type="image/png" href="logo.png?v=5">
+    
     <style>
-        body { font-family: sans-serif; line-height: 1.6; max-width: 800px; margin: 40px auto; padding: 20px; color: #333; text-align: center; }
-        .logo { max-width: 150px; margin-bottom: 20px; }
-        .container { border: 1px solid #ddd; padding: 30px; border-radius: 8px; background-color: #f9f9f9; }
-        h1 { color: #007bff; }
-        .contract { background: #eee; padding: 10px; font-family: monospace; word-break: break-all; font-weight: bold; }
+        body { 
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; 
+            line-height: 1.6; 
+            max-width: 800px; 
+            margin: 40px auto; 
+            padding: 20px; 
+            color: #333; 
+            background-color: #f4f7f6;
+        }
+        .container { 
+            border: 1px solid #e0e0e0; 
+            padding: 35px; 
+            border-radius: 16px; 
+            background-color: #ffffff; 
+            box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+            text-align: center;
+        }
+        /* استایل لوگوی جدید شما */
+        .logo {
+            width: 180px;
+            height: auto;
+            margin: 0 auto 20px auto;
+            display: block;
+            border-radius: 15px;
+            transition: transform 0.3s ease;
+        }
+        .logo:hover {
+            transform: scale(1.05);
+        }
+        h1 { 
+            color: #0d47a1; 
+            margin-top: 10px;
+            margin-bottom: 5px;
+            font-weight: 800;
+        }
+        .subtitle {
+            font-size: 1.1em;
+            color: #555;
+            margin-bottom: 30px;
+        }
+        .section-title {
+            text-align: left;
+            margin-top: 30px;
+            margin-bottom: 12px;
+            color: #1a237e;
+            border-bottom: 2px solid #e3f2fd;
+            padding-bottom: 5px;
+        }
+        .project-info {
+            text-align: left;
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            border-left: 5px solid #2196f3;
+            margin-bottom: 30px;
+        }
+        /* باکس آدرس کانترکت حرفه‌ای */
+        .contract-box { 
+            background: #e3f2fd; 
+            border: 2px dashed #2196f3;
+            padding: 20px; 
+            border-radius: 12px;
+            font-family: 'Courier New', Courier, monospace; 
+            word-break: break-all; 
+            margin: 25px 0;
+            cursor: pointer;
+            position: relative;
+            transition: all 0.2s ease;
+        }
+        .contract-box:hover {
+            background: #bbdefb;
+            border-style: solid;
+        }
+        .contract-title {
+            font-weight: bold;
+            color: #0d47a1;
+            margin-bottom: 10px;
+            font-family: sans-serif;
+            font-size: 1em;
+        }
+        .contract-address {
+            font-size: 1.1em;
+            color: #000;
+            font-weight: bold;
+        }
+        .copy-hint {
+            font-size: 0.85em;
+            color: #1976d2;
+            margin-top: 8px;
+            font-family: sans-serif;
+            font-weight: 500;
+        }
+        .links-list {
+            text-align: left;
+            list-style: none;
+            padding: 0;
+        }
+        .links-list li {
+            margin-bottom: 12px;
+            padding-left: 10px;
+        }
+        .links-list a {
+            color: #2196f3;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        .links-list a:hover {
+            color: #0d47a1;
+            text-decoration: underline;
+        }
+        .footer { 
+            margin-top: 40px; 
+            font-size: 0.9em; 
+            color: #999; 
+            border-top: 1px solid #eee;
+            padding-top: 20px;
+        }
+        /* پیغام کپی شدن */
+        #toast {
+            visibility: hidden;
+            min-width: 250px;
+            background-color: #1b5e20;
+            color: #fff;
+            text-align: center;
+            border-radius: 8px;
+            padding: 12px;
+            position: fixed;
+            z-index: 1000;
+            left: 50%;
+            bottom: 40px;
+            transform: translateX(-50%);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+            font-weight: bold;
+        }
+        #toast.show {
+            visibility: visible;
+            animation: fadein 0.4s, fadeout 0.5s 2.5s;
+        }
+        @keyframes fadein { from { bottom: 0; opacity: 0; } to { bottom: 40px; opacity: 1; } }
+        @keyframes fadeout { from { bottom: 40px; opacity: 1; } to { bottom: 0; opacity: 0; } }
     </style>
 </head>
 <body>
-    <div class="container">
-        <!-- logo.png -->
-        <img src="logo.png" alt="Aqua Cash Logo" class="logo">
-        
-        <h1>Aqua Cash (AQU)</h1>
-        <p>Decentralized utility token designed for secure and efficient smart contract interactions on the <strong>BNB Smart Chain (BSC)</strong>.</p>
-        
-        <h3>Contract Address</h3>
-        <p class="contract">0x1Ca2fcD10477604F291525c54c65a6B3E7485303</p>
 
-        <h3>Project Information</h3>
-        <p>Aqua Cash (AQU) aims to provide utility within the BSC ecosystem. Our project is built with security and transparency in mind.</p>
+<div class="container">
+    <!-- نمایش لوگوی آپدیت شده شما -->
+    <img src="logo.png?v=5" alt="Aqua Cash Logo" class="logo">
+    
+    <h1>Aqua Cash (AQU)</h1>
+    <p class="subtitle">Decentralized utility token designed for secure and efficient smart contract interactions on the <strong>BNB Smart Chain (BSC)</strong>.</p>
+    
+    <!-- بخش کپی کانترکت -->
+    <div class="contract-box" onclick="copyAddress()">
+        <div class="contract-title">Official Contract Address</div>
+        <div class="contract-address" id="contractAddress">0x1Ca2fcD10477604F291525c54c65a6B3E7485303</div>
+        <div class="copy-hint">🖱️ Click to copy address</div>
+    </div>
 
-        <h3>Official Links</h3>
-        <p>
-            <a href="https://github.com/Aquacash/aquacash.github.io" target="_blank">GitHub Repository</a><br>
-            Email: <a href="mailto:aqua.cash@tutamail.com">aqua.cash@tutamail.com</a>
-        </p>
-        <img src="logo.png" alt="Aqua Cash Logo" style="width: 100px; height: 100px; display: block; margin: 0 auto 20px auto;">
-<div class="contract" onclick="copyToClipboard('0x1Ca2fcD10477604F291525c54c65a6B3E7485303')" style="cursor: pointer;">
-    <strong>Contract Address (Click to copy):</strong><br>
-    <code>0x1Ca2fcD10477604F291525c54c65a6B3E7485303</code>
+    <h3 class="section-title">Project Information</h3>
+    <div class="project-info">
+        <p>Aqua Cash (AQU) is dedicated to providing real utility within the BSC ecosystem. Our mission is to build a secure, transparent, and community-driven financial tool for the decentralized world.</p>
+    </div>
+
+    <h3 class="section-title">Official Links</h3>
+    <ul class="links-list">
+        <li>🌐 <strong>GitHub Repository:</strong> <a href="https://github.com/aquacash" target="_blank">github.com/aquacash</a></li>
+        <li>📧 <strong>Official Email:</strong> <a href="mailto:aqua.cash@tutamail.com">aqua.cash@tutamail.com</a></li>
+    </ul>
+
+    <div class="footer">
+        &copy; 2026 Aqua Cash Project. All rights reserved.
+    </div>
 </div>
 
-<script>
+<!-- پیغام تایید کپی -->
+<div id="toast">✅ Contract Address Copied!</div>
 
+<script>
+function copyAddress() {
+    const address = document.getElementById('contractAddress').innerText;
+    navigator.clipboard.writeText(address).then(() => {
+        const toast = document.getElementById('toast');
+        toast.className = "show";
+        setTimeout(() => { toast.className = toast.className.replace("show", ""); }, 3000);
+    });
 }
 </script>
 
-        <p>&copy; 2026 Aqua Cash Project. All rights reserved.</p>
-    </div>
 </body>
 </html>
-
