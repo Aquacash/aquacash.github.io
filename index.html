@@ -41,4 +41,95 @@
     <div class="contract-box" onclick="copyAddress()">
         <strong>Official Contract Address:</strong><br>
         <code id="contract">0x1Ca2fcD10477604F291525c54c65a6B3E7485303</code>
-        <p style="font-size: 0.8em; margin: 5px 0 0;">
+        <p style="font-size: 0.8em; margin: 5px 0 0;">🖱️ Click to copy address</p>
+    </div>
+
+    <h2 class="tokenomics-title">Tokenomics</h2>
+    <div class="grid">
+        <div class="card">
+            <h3>40%</h3>
+            <p>Liquidity Pool (Locked)</p>
+        </div>
+        <div class="card">
+            <h3>30%</h3>
+            <p>Token Burn 🔥</p>
+        </div>
+        <div class="card">
+            <h3>20%</h3>
+            <p>Ecosystem Development</p>
+        </div>
+        <div class="card">
+            <h3>10%</h3>
+            <p>Team & Marketing</p>
+        </div>
+    </div>
+
+    <!-- Expanded Project Information Section -->
+    <div style="text-align: left; margin-top: 40px; padding: 0 20px;">
+        <h3>About Aqua Cash (AQU)</h3>
+        <p>Aqua Cash (AQU) is a decentralized utility token built on the BNB Smart Chain (BSC), engineered to power a transparent and community-driven ecosystem. Our core mission is to facilitate seamless value transfer and provide essential utility within our growing decentralized platform.</p>
+
+        <h4>Key Focus Areas:</h4>
+        <ul>
+            <li><strong>Secure & Efficient Transactions:</strong> Leveraging the speed and low fees of the BNB Smart Chain, AQU ensures efficient and cost-effective transactions for all users.</li>
+            <li><strong>Ecosystem Development:</strong> A significant portion of AQU tokens is allocated towards the continuous development and expansion of the Aqua Cash ecosystem, fostering innovation and utility.</li>
+            <li><strong>Community Governance (Future Vision):</strong> We envision a future where AQU holders actively participate in the governance of the ecosystem, shaping its direction through decentralized decision-making.</li>
+            <li><strong>Transparency:</strong> All tokenomics and contract details are publicly available on the BNB Smart Chain and verifiable through BscScan, ensuring trust and accountability.</li>
+        </ul>
+
+        <h4>Technology:</h4>
+        <p>Our smart contracts are developed with a focus on security, efficiency, and adherence to the highest standards of the BNB Smart Chain. The tokenomics are designed for sustainable growth and value distribution.</p>
+
+        <h4>Roadmap Sneak Peek:</h4>
+        <p>While specific details are evolving, our roadmap includes initiatives focused on:</p>
+        <ul style="list-style: none; padding: 0;">
+            <li>Expanding ecosystem utility.</li>
+            <li>Exploring strategic partnerships.</li>
+            <li>Enhancing community engagement features.</li>
+            <!-- Add any other concrete future plans you have here -->
+        </ul>
+    </div>
+
+    <!-- Section for Team & Contact (Privacy Focused) -->
+    <div style="text-align: left; margin-top: 40px; padding: 0 20px; border-top: 1px solid #eee; padding-top: 30px;">
+        <h3>Our Commitment to Transparency</h3>
+        <p>The Aqua Cash project is driven by a dedicated team of experienced developers and blockchain enthusiasts committed to building a robust and valuable ecosystem. While we prioritize the privacy and security of our team members, we uphold the highest standards of transparency regarding our project's development, code, and tokenomics. We encourage all community members to review the contract code and transaction history on BscScan to verify our operations.</p>
+
+        <h3>Official Links</h3>
+        <ul style="list-style: none; padding: 0;">
+            <li>🌐 <strong>GitHub:</strong> <a href="https://github.com/aquacash">github.com/aquacash</a></li>
+            <li>📧 <strong>Official Project Email:</strong> <a href="mailto:aqua.cash@tutamail.com">aqua.cash@tutamail.com</a></li>
+        </ul>
+    </div>
+
+    <div class="footer">
+        © 2026 Aqua Cash Project. All rights reserved.
+    </div>
+</div>
+
+<script>
+    function copyAddress() {
+        const addr = document.getElementById('contract').innerText;
+        navigator.clipboard.writeText(addr);
+        const toast = document.getElementById('copy-toast');
+        toast.style.visibility = 'visible';
+        setTimeout(() => { toast.style.visibility = 'hidden'; }, 2000);
+    }
+
+    function connectWallet() {
+        if (typeof window.ethereum !== 'undefined') {
+            ethereum.request({ method: 'eth_requestAccounts' })
+            .then(accounts => {
+                alert('Connected: ' + accounts[0]);
+            })
+            .catch(err => {
+                alert('Connection failed: ' + err.message);
+            });
+        } else {
+            alert('Please install MetaMask or a Web3 wallet!');
+        }
+    }
+</script>
+
+</body>
+</html>
