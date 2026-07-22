@@ -18,7 +18,7 @@ Aqua Cash (AQU) is a utility token designed with a focus on **transparency**, a 
 *   **Total Supply:** 28,000,000 AQU
 *   **Buy Tax:** 0%
 *   **Sell Tax:** 0%
-*   **Tokens Locked:** 10,000,000 AQU (until May 2027)
+*   **Tokens Locked:** 10,000,000 AQU (until May 2029)
 *   **Ecosystem Reward Pool:** 3,000,000 AQU (distributed over 4 years)
 *   **Contract Address:** `0x1Ca2fcD10477604F291525c54c65a6B3E7485303`
 *   **Network:** BNB Smart Chain (BSC)
