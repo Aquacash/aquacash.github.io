@@ -33,7 +33,7 @@ whitepaper_content = """
 
 *   **Anonymous Team:** The Aqua Cash core team has chosen to remain anonymous to prioritize the project's development and community growth above individual recognition. This approach allows the team to focus on delivering value and building a robust ecosystem without external distractions or personal biases influencing decisions, similar to the creator of Bitcoin.
 *   **Commitment to Transparency:** Despite the team's anonymity, Aqua Cash is committed to fostering trust through:
-    *   **Locked Liquidity/Tokens:** The locking of 10,000,000 AQU until May 2030 clearly demonstrates a long-term vision and commitment to the project's success.
+    *   **Locked Liquidity/Tokens:** The locking of 10,000,000 AQU until May 2029 clearly demonstrates a long-term vision and commitment to the project's success.
     *   **Open-Source Code:** The Aqua Cash smart contracts are open-source and available for public inspection on GitHub. This allows for community verification of contract logic and security. Link: `https://github.com/AquaCash`
     *   **Community Engagement:** Active communication through official channels and responsiveness to community feedback are paramount.
     *   **Audited Smart Contracts:** Smart contract audits by reputable third-party firms are planned to ensure the security and integrity of the Aqua Cash protocol. Details regarding audit partners and reports will be published upon completion, with audits expected to commence next month.
