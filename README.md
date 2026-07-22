@@ -1,3 +1,5 @@
+![Aqua Cash Logo](assets/AquaCash_Logo_200x200.png)
+
 # Aqua Cash (AQU) - Official Repository
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
