@@ -1,4 +1,5 @@
-<!DOCTYPE html>
+
+  <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -6,23 +7,160 @@
     <title>Aqua Cash (AQU) | Official Website</title>
     <link rel="icon" type="image/png" href="AquaCash_Logo_200x200.png">
     <style>
-        :root { --primary: #007bff; --bg: #f8f9fa; --text: #333; }
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; margin: 0; padding: 20px; background-color: var(--bg); color: var(--text); }
-        .container { max-width: 800px; margin: 40px auto; padding: 30px; background: white; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); text-align: center; }
-        .logo { width: 120px; margin-bottom: 20px; }
-        h1 { color: #004085; margin-bottom: 10px; }
-        .contract-box { background: #eef2f7; border: 2px dashed var(--primary); padding: 15px; border-radius: 10px; margin: 20px 0; cursor: pointer; position: relative; transition: 0.3s; }
-        .contract-box:hover { background: #e2e8f0; }
-        code { word-break: break-all; font-size: 0.9em; color: #d63384; font-weight: bold; }
-        .btn { display: inline-block; padding: 10px 25px; margin: 10px; border-radius: 25px; text-decoration: none; font-weight: bold; transition: 0.3s; border: none; cursor: pointer; }
-        .btn-primary { background: var(--primary); color: white; }
-        .btn-outline { border: 2px solid var(--primary); color: var(--primary); }
-        .btn:hover { opacity: 0.8; transform: translateY(-2px); }
-        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; margin-top: 30px; }
-        .card { padding: 20px; background: #fff; border-bottom: 4px solid var(--primary); box-shadow: 0 4px 6px rgba(0,0,0,0.05); border-radius: 10px; }
-        .tokenomics-title { margin-top: 50px; border-top: 1px solid #eee; padding-top: 30px; }
-        .footer { margin-top: 50px; font-size: 0.85em; color: #666; }
-        #copy-toast { visibility: hidden; background: #28a745; color: white; padding: 10px; border-radius: 5px; position: fixed; top: 20px; right: 20px; }
+        :root {
+            --primary: #007bff;
+            --bg: #f8f9fa;
+            --text: #333;
+            --success: #28a745;
+        }
+
+        body {
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: var(--bg);
+            color: var(--text);
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 30px;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .logo {
+            width: 120px;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            color: #004085;
+            margin-bottom: 10px;
+        }
+
+        .contract-box {
+            background: #eef2f7;
+            border: 2px dashed var(--primary);
+            padding: 15px;
+            border-radius: 10px;
+            margin: 20px 0;
+            cursor: pointer;
+            position: relative;
+            transition: 0.3s;
+        }
+
+        .contract-box:hover {
+            background: #e2e8f0;
+        }
+
+        code {
+            word-break: break-all;
+            font-size: 0.9em;
+            color: #d63384;
+            font-weight: bold;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 25px;
+            margin: 10px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn-primary {
+            background: var(--primary);
+            color: white;
+        }
+
+        .btn-outline {
+            border: 2px solid var(--primary);
+            color: var(--primary);
+            background: transparent;
+        }
+
+        .btn:hover {
+            opacity: 0.85;
+            transform: translateY(-2px);
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .card {
+            padding: 20px;
+            background: #fff;
+            border-bottom: 4px solid var(--primary);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+            border-radius: 10px;
+        }
+
+        .section-title {
+            margin-top: 50px;
+            border-top: 1px solid #eee;
+            padding-top: 30px;
+        }
+
+        .info-section {
+            text-align: left;
+            margin-top: 40px;
+            padding: 0 20px;
+        }
+
+        .footer {
+            margin-top: 50px;
+            font-size: 0.85em;
+            color: #666;
+        }
+
+        .badge {
+            display: inline-block;
+            background: var(--success);
+            color: white;
+            font-size: 0.8em;
+            padding: 6px 12px;
+            border-radius: 20px;
+            margin-bottom: 10px;
+        }
+
+        #copy-toast {
+            visibility: hidden;
+            background: var(--success);
+            color: white;
+            padding: 10px 14px;
+            border-radius: 5px;
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            z-index: 999;
+        }
+
+        ul.clean-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        ul.clean-list li {
+            margin-bottom: 10px;
+        }
+
+        a {
+            color: var(--primary);
+        }
     </style>
 </head>
 <body>
@@ -34,103 +172,45 @@
     <h1>Aqua Cash (AQU)</h1>
     <p>Secure and efficient utility token on the <strong>BNB Smart Chain (BSC)</strong>.</p>
 
-    <!-- Wallet Connect Button -->
-    <button class="btn btn-primary" onclick="connectWallet()">Connect Wallet</button>
+    <a href="https://pancakeswap.finance/swap?outputCurrency=0x1Ca2fcD10477604F291525c54c65a6B3E7485303" target="_blank" class="btn btn-primary">Buy on PancakeSwap</a>
     <a href="https://bscscan.com/token/0x1Ca2fcD10477604F291525c54c65a6B3E7485303" target="_blank" class="btn btn-outline">View on BscScan</a>
 
     <div class="contract-box" onclick="copyAddress()">
         <strong>Official Contract Address:</strong><br>
         <code id="contract">0x1Ca2fcD10477604F291525c54c65a6B3E7485303</code>
-        <p style="font-size: 0.8em; margin: 5px 0 0;">🖱️ Click to copy address</p>
+        <p style="font-size: 0.8em; margin: 5px 0 0;">Click to copy address</p>
     </div>
 
-    <h2 class="tokenomics-title">Tokenomics</h2>
+    <h2 class="section-title">Token Information</h2>
     <div class="grid">
         <div class="card">
-            <h3>40%</h3>
-            <p>Liquidity Pool (Locked)</p>
+            <h3>1,000,000,000</h3>
+            <p>Total Supply</p>
         </div>
         <div class="card">
-            <h3>30%</h3>
-            <p>Token Burn 🔥</p>
+            <h3>10,000,000 AQU</h3>
+            <p>Tokens Locked</p>
         </div>
         <div class="card">
-            <h3>20%</h3>
-            <p>Ecosystem Development</p>
+            <h3>0%</h3>
+            <p>Buy / Sell Tax</p>
         </div>
         <div class="card">
-            <h3>10%</h3>
-            <p>Team & Marketing</p>
+            <h3>BSC</h3>
+            <p>BNB Smart Chain</p>
         </div>
     </div>
 
-    <!-- Expanded Project Information Section -->
-    <div style="text-align: left; margin-top: 40px; padding: 0 20px;">
+    <div class="info-section">
         <h3>About Aqua Cash (AQU)</h3>
-        <p>Aqua Cash (AQU) is a decentralized utility token built on the BNB Smart Chain (BSC), engineered to power a transparent and community-driven ecosystem. Our core mission is to facilitate seamless value transfer and provide essential utility within our growing decentralized platform.</p>
+        <p>
+            Aqua Cash (AQU) is a decentralized utility token built on the BNB Smart Chain (BSC),
+            designed to support a transparent and community-focused ecosystem. Our goal is to
+            provide reliable on-chain utility with clear and verifiable project information.
+        </p>
 
-        <h4>Key Focus Areas:</h4>
+        <h4>Key Focus Areas</h4>
         <ul>
-            <li><strong>Secure & Efficient Transactions:</strong> Leveraging the speed and low fees of the BNB Smart Chain, AQU ensures efficient and cost-effective transactions for all users.</li>
-            <li><strong>Ecosystem Development:</strong> A significant portion of AQU tokens is allocated towards the continuous development and expansion of the Aqua Cash ecosystem, fostering innovation and utility.</li>
-            <li><strong>Community Governance (Future Vision):</strong> We envision a future where AQU holders actively participate in the governance of the ecosystem, shaping its direction through decentralized decision-making.</li>
-            <li><strong>Transparency:</strong> All tokenomics and contract details are publicly available on the BNB Smart Chain and verifiable through BscScan, ensuring trust and accountability.</li>
-        </ul>
-
-        <h4>Technology:</h4>
-        <p>Our smart contracts are developed with a focus on security, efficiency, and adherence to the highest standards of the BNB Smart Chain. The tokenomics are designed for sustainable growth and value distribution.</p>
-
-        <h4>Roadmap Sneak Peek:</h4>
-        <p>While specific details are evolving, our roadmap includes initiatives focused on:</p>
-        <ul style="list-style: none; padding: 0;">
-            <li>Expanding ecosystem utility.</li>
-            <li>Exploring strategic partnerships.</li>
-            <li>Enhancing community engagement features.</li>
-            <!-- Add any other concrete future plans you have here -->
-        </ul>
-    </div>
-
-    <!-- Section for Team & Contact (Privacy Focused) -->
-    <div style="text-align: left; margin-top: 40px; padding: 0 20px; border-top: 1px solid #eee; padding-top: 30px;">
-        <h3>Our Commitment to Transparency</h3>
-        <p>The Aqua Cash project is driven by a dedicated team of experienced developers and blockchain enthusiasts committed to building a robust and valuable ecosystem. While we prioritize the privacy and security of our team members, we uphold the highest standards of transparency regarding our project's development, code, and tokenomics. We encourage all community members to review the contract code and transaction history on BscScan to verify our operations.</p>
-
-        <h3>Official Links</h3>
-        <ul style="list-style: none; padding: 0;">
-            <li>🌐 <strong>GitHub:</strong> <a href="https://github.com/aquacash">github.com/aquacash</a></li>
-            <li>📧 <strong>Official Project Email:</strong> <a href="mailto:aqua.cash@tutamail.com">aqua.cash@tutamail.com</a></li>
-            <li>🔒 <strong>Token Lock:</strong> <a href="https://www.pinksale.finance/pinklock/bsc/record/1674084" target="_blank">Pinksale Lock Record (10M AQU)</a></li>
-        </ul>
-    </div>
-
-    <div class="footer">
-        © 2026 Aqua Cash Project. All rights reserved.
-    </div>
-</div>
-
-<script>
-    function copyAddress() {
-        const addr = document.getElementById('contract').innerText;
-        navigator.clipboard.writeText(addr);
-        const toast = document.getElementById('copy-toast');
-        toast.style.visibility = 'visible';
-        setTimeout(() => { toast.style.visibility = 'hidden'; }, 2000);
-    }
-
-    function connectWallet() {
-        if (typeof window.ethereum !== 'undefined') {
-            ethereum.request({ method: 'eth_requestAccounts' })
-            .then(accounts => {
-                alert('Connected: ' + accounts[0]);
-            })
-            .catch(err => {
-                alert('Connection failed: ' + err.message);
-            });
-        } else {
-            alert('Please install MetaMask or a Web3 wallet!');
-        }
-    }
-</script>
-
-</body>
-</html>
+            <li><strong>Secure and Efficient Transactions:</strong> AQU benefits from the speed and low transaction costs of BNB Smart Chain.</li>
+            <li><strong>Utility-Oriented Development:</strong> The project is focused on building practical ecosystem value over time.</li>
+            <li><strong>Community Vision:</strong> Aqua Cash is intended to grow through long-term 
