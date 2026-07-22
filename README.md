@@ -1,4 +1,4 @@
-![Aqua Cash Logo](assets/AquaCash_Logo_200x200.png)
+!![Aqua Cash Logo](AquaCash_Logo.svg)
 
 # Aqua Cash (AQU) - Official Repository
 
