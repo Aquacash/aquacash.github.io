@@ -34,7 +34,7 @@ The fixed total supply is capped at **28,000,000 AQU**. No new tokens can be min
 Aqua Cash features **0% buy tax and 0% sell tax**. This means every transaction is free of additional fees, allowing for direct value transfer.
 
 ### 🔹 Token Lock
-To demonstrate our commitment to long-term stability and investor confidence, **10,000,000 AQU** have been locked using Pinksale. The lock period extends until **May 2027**.
+To demonstrate our commitment to long-term stability and investor confidence, **10,000,000 AQU** have been locked using Pinksale. The lock period extends until **May 2030**.
 *   **Lock Record:** [View Pinksale Lock Record](https://www.pinksale.finance/pinklock/bsc/record/1674084)
 
 ### 🔹 Ecosystem Reward Pool
