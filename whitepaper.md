@@ -18,7 +18,7 @@ whitepaper_content = """
 *   **Ticker:** AQU
 *   **Blockchain:** Binance Smart Chain (BSC)
 *   **Total Supply:** 28,000,000 AQU
-*   **Locked Tokens:** 10,000,000 AQU (Locked until May 2030. This provides long-term stability and investor confidence.)
+*   **Locked Tokens:** 10,000,000 AQU (Locked until May 2029. This provides long-term stability and investor confidence.)
 *   **Reward Pool:** 3,000,000 AQU (To be distributed over 4 years for Staking Rewards, rewarding early adopters and active participants in the Aqua Cash ecosystem.)
 *   **Transaction Tax:** 0% Buy/Sell Tax (This feature encourages trading and reduces barriers for users, ensuring that the full value of each transaction is retained by participants.)
 *   **Token Burn:** Currently, there is no automated token burn mechanism. Future tokenomics adjustments may consider deflationary measures if deemed beneficial for ecosystem health.
