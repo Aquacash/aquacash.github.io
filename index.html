@@ -1,470 +1,291 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Aqua Cash (AQU) | Official Website</title>
-  <meta
-    name="description"
-    content="Aqua Cash (AQU) is a utility token on BNB Smart Chain focused on transparency, simple token structure, and verifiable on-chain information."
-  >
-  <link rel="icon" type="image/png" href="AquaCash_Logo_200x200.png">
-  <style>
-    :root {
-      --primary: #0d6efd;
-      --primary-dark: #084298;
-      --bg: #f4f7fb;
-      --surface: #ffffff;
-      --surface-soft: #f8fbff;
-      --text: #1f2937;
-      --muted: #6b7280;
-      --border: #dbe4f0;
-      --success: #198754;
-      --shadow: 0 12px 35px rgba(15, 23, 42, 0.08);
-      --radius: 18px;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aqua Cash (AQU) | Official Project Portal</title>
+    <meta name="description" content="Aqua Cash (AQU) is a utility token built on BNB Smart Chain focusing on fixed supply, public on-chain transparency, and verifiable records.">
+    <link rel="icon" type="image/png" href="AquaCash_Logo_200x200.png">
+    <style>
+        :root {
+            --bg-color: #0b0e14;
+            --card-bg: #151a23;
+            --accent-color: #00d2ff;
+            --accent-hover: #00a3cc;
+            --text-color: #e2e8f0;
+            --text-muted: #94a3b8;
+            --border-color: #1e293b;
+        }
 
-    * {
-      box-sizing: border-box;
-    }
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        }
 
-    html {
-      scroll-behavior: smooth;
-    }
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            padding-bottom: 60px;
+        }
 
-    body {
-      margin: 0;
-      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-      background: linear-gradient(180deg, #eef5ff 0%, var(--bg) 100%);
-      color: var(--text);
-      line-height: 1.7;
-    }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
 
-    a {
-      color: var(--primary);
-      text-decoration: none;
-    }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0;
+            border-bottom: 1px solid var(--border-color);
+        }
 
-    a:hover {
-      text-decoration: underline;
-    }
+        .logo-container {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
 
-    .page {
-      width: min(1100px, calc(100% - 32px));
-      margin: 0 auto;
-    }
+        .logo-container img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+        }
 
-    .hero {
-      padding: 56px 0 24px;
-    }
+        .logo-container h1 {
+            font-size: 1.4rem;
+            color: #fff;
+            font-weight: 700;
+        }
 
-    .hero-card {
-      background: var(--surface);
-      border: 1px solid var(--border);
-      border-radius: 24px;
-      box-shadow: var(--shadow);
-      padding: 40px 28px;
-      text-align: center;
-    }
+        nav {
+            display: flex;
+            gap: 20px;
+        }
 
-    .logo {
-      width: 110px;
-      height: 110px;
-      object-fit: contain;
-      margin-bottom: 18px;
-    }
+        nav a {
+            color: var(--text-muted);
+            text-decoration: none;
+            font-size: 0.95rem;
+            transition: color 0.2s;
+        }
 
-    .eyebrow {
-      display: inline-block;
-      padding: 6px 12px;
-      border-radius: 999px;
-      background: #e8f1ff;
-      color: var(--primary-dark);
-      font-size: 0.86rem;
-      font-weight: 600;
-      margin-bottom: 14px;
-    }
+        nav a:hover, nav a.active {
+            color: var(--accent-color);
+        }
 
-    h1 {
-      margin: 0 0 10px;
-      font-size: clamp(2rem, 4vw, 3rem);
-      line-height: 1.15;
-      color: #0f172a;
-    }
+        .hero {
+            padding: 50px 0 30px;
+            text-align: center;
+        }
 
-    .hero p {
-      margin: 0 auto;
-      max-width: 760px;
-      color: var(--muted);
-      font-size: 1.04rem;
-    }
+        .hero h2 {
+            font-size: 2.2rem;
+            color: #fff;
+            margin-bottom: 15px;
+        }
 
-    .actions {
-      margin-top: 28px;
-      display: flex;
-      flex-wrap: wrap;
-      gap: 12px;
-      justify-content: center;
-    }
+        .hero p {
+            color: var(--text-muted);
+            max-width: 700px;
+            margin: 0 auto 30px;
+            font-size: 1.05rem;
+        }
 
-    .btn {
-      display: inline-block;
-      padding: 12px 22px;
-      border-radius: 999px;
-      font-weight: 700;
-      font-size: 0.96rem;
-      transition: transform 0.2s ease, opacity 0.2s ease, box-shadow 0.2s ease;
-      border: 2px solid transparent;
-    }
+        .contract-box {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            padding: 15px 20px;
+            border-radius: 8px;
+            display: inline-block;
+            word-break: break-all;
+            margin-bottom: 25px;
+        }
 
-    .btn:hover {
-      transform: translateY(-2px);
-      text-decoration: none;
-      opacity: 0.96;
-    }
+        .contract-box span {
+            color: var(--text-muted);
+            font-size: 0.85rem;
+            display: block;
+            margin-bottom: 5px;
+        }
 
-    .btn-primary {
-      background: var(--primary);
-      color: #fff;
-      box-shadow: 0 10px 24px rgba(13, 110, 253, 0.22);
-    }
+        .contract-box code {
+            color: var(--accent-color);
+            font-family: monospace;
+            font-size: 0.95rem;
+        }
 
-    .btn-secondary {
-      background: #fff;
-      color: var(--primary);
-      border-color: var(--primary);
-    }
+        .btn-group {
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
 
-    .section {
-      margin: 26px 0;
-    }
+        .btn {
+            background-color: var(--card-bg);
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 6px;
+            text-decoration: none;
+            border: 1px solid var(--border-color);
+            font-size: 0.9rem;
+            transition: all 0.2s;
+        }
 
-    .card {
-      background: var(--surface);
-      border: 1px solid var(--border);
-      border-radius: var(--radius);
-      box-shadow: var(--shadow);
-      padding: 26px;
-    }
+        .btn:hover {
+            border-color: var(--accent-color);
+            color: var(--accent-color);
+        }
 
-    .section-title {
-      margin: 0 0 14px;
-      font-size: 1.45rem;
-      color: #0f172a;
-    }
+        .btn-primary {
+            background-color: var(--accent-color);
+            color: #000;
+            font-weight: 600;
+            border: none;
+        }
 
-    .section-subtitle {
-      margin: 0 0 22px;
-      color: var(--muted);
-    }
+        .btn-primary:hover {
+            background-color: var(--accent-hover);
+            color: #000;
+        }
 
-    .contract-box {
-      margin-top: 16px;
-      background: var(--surface-soft);
-      border: 2px dashed #b8d0f7;
-      border-radius: 14px;
-      padding: 18px;
-      text-align: center;
-      cursor: pointer;
-      transition: background 0.2s ease, transform 0.2s ease;
-    }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin-top: 40px;
+        }
 
-    .contract-box:hover {
-      background: #edf5ff;
-      transform: translateY(-1px);
-    }
+        .card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            padding: 25px;
+            border-radius: 8px;
+        }
 
-    .contract-box strong {
-      display: block;
-      margin-bottom: 8px;
-      color: #0f172a;
-    }
+        .card h3 {
+            color: #fff;
+            margin-bottom: 12px;
+            font-size: 1.2rem;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 8px;
+        }
 
-    code {
-      font-family: Consolas, Monaco, monospace;
-      font-size: 0.95rem;
-      word-break: break-all;
-      color: #c2185b;
-      font-weight: 700;
-    }
+        .info-list {
+            list-style: none;
+        }
 
-    .hint {
-      margin: 8px 0 0;
-      font-size: 0.88rem;
-      color: var(--muted);
-    }
+        .info-list li {
+            display: flex;
+            justify-content: space-between;
+            padding: 8px 0;
+            border-bottom: 1px dashed #1e293b;
+            font-size: 0.9rem;
+        }
 
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(4, minmax(0, 1fr));
-      gap: 18px;
-    }
+        .info-list li span:first-child {
+            color: var(--text-muted);
+        }
 
-    .stat-card {
-      background: var(--surface);
-      border: 1px solid var(--border);
-      border-radius: 16px;
-      box-shadow: var(--shadow);
-      padding: 22px;
-      text-align: center;
-    }
+        .info-list li span:last-child {
+            color: var(--text-color);
+            font-weight: 500;
+        }
 
-    .stat-card h3 {
-      margin: 0 0 8px;
-      font-size: 1.4rem;
-      color: var(--primary-dark);
-    }
+        footer {
+            margin-top: 60px;
+            padding-top: 20px;
+            border-top: 1px solid var(--border-color);
+            text-align: center;
+            color: var(--text-muted);
+            font-size: 0.85rem;
+        }
 
-    .stat-card p {
-      margin: 0;
-      color: var(--muted);
-      font-size: 0.95rem;
-    }
-
-    .two-col {
-      display: grid;
-      grid-template-columns: 1.2fr 1fr;
-      gap: 20px;
-    }
-
-    .badge {
-      display: inline-block;
-      padding: 6px 12px;
-      border-radius: 999px;
-      background: #eaf7ef;
-      color: var(--success);
-      font-size: 0.84rem;
-      font-weight: 700;
-      margin-bottom: 12px;
-    }
-
-    ul.clean-list {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-    }
-
-    ul.clean-list li {
-      margin-bottom: 12px;
-      color: var(--text);
-    }
-
-    .footer {
-      text-align: center;
-      color: var(--muted);
-      font-size: 0.9rem;
-      padding: 10px 0 40px;
-    }
-
-    #copy-toast {
-      visibility: hidden;
-      min-width: 180px;
-      background: var(--success);
-      color: #fff;
-      text-align: center;
-      border-radius: 10px;
-      padding: 12px 16px;
-      position: fixed;
-      top: 20px;
-      right: 20px;
-      z-index: 1000;
-      box-shadow: 0 10px 25px rgba(25, 135, 84, 0.25);
-    }
-
-    @media (max-width: 900px) {
-      .grid,
-      .two-col {
-        grid-template-columns: 1fr 1fr;
-      }
-    }
-
-    @media (max-width: 640px) {
-      .hero-card,
-      .card,
-      .stat-card {
-        padding: 22px 18px;
-      }
-
-      .grid,
-      .two-col {
-        grid-template-columns: 1fr;
-      }
-
-      .actions {
-        flex-direction: column;
-      }
-
-      .btn {
-        width: 100%;
-      }
-
-      .page {
-        width: min(100% - 20px, 1100px);
-      }
-    }
-  </style>
+        footer a {
+            color: var(--accent-color);
+            text-decoration: none;
+        }
+    </style>
 </head>
 <body>
-  <div id="copy-toast">Address copied successfully</div>
 
-  <main class="page">
-    <section class="hero">
-      <div class="hero-card">
-        <img src="AquaCash_Logo_200x200.png" alt="Aqua Cash Logo" class="logo">
-        <div class="eyebrow">Official AQU Project Page</div>
-        <h1>Aqua Cash (AQU)</h1>
-        <p>
-          Aqua Cash is a utility token on BNB Smart Chain focused on transparent
-          on-chain visibility, simple token structure, and verifiable public records.
-        </p>
+    <div class="container">
+        <header>
+            <div class="logo-container">
+                <img src="AquaCash_Logo_200x200.png" alt="Aqua Cash Logo">
+                <h1>Aqua Cash</h1>
+            </div>
+            <nav>
+                <a href="index.html" class="active">Overview</a>
+                <a href="transparency.html">Transparency</a>
+                <a href="contact.html">Contact</a>
+                <a href="whitepaper.md">Whitepaper</a>
+            </nav>
+        </header>
 
-        <div class="actions">
-          <a
-            href="https://pancakeswap.finance/swap?outputCurrency=0x1Ca2fcD10477604F291525c54c65a6B3E7485303"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="btn btn-primary"
-          >Buy on PancakeSwap</a>
-          <a
-            href="https://bscscan.com/token/0x1Ca2fcD10477604F291525c54c65a6B3E7485303"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="btn btn-secondary"
-          >View on BscScan</a>
+        <section class="hero">
+            <h2>Aqua Cash (AQU) Official Portal</h2>
+            <p>A utility token deployed on BNB Smart Chain designed with a fixed supply, zero transfer tax structure, and publicly verifiable on-chain records.</p>
+            
+            <div class="contract-box">
+                <span>Official Smart Contract Address (BSC)</span>
+                <code>0x1Ca2fcD10477604F291525c54c65a6B3E7485303</code>
+            </div>
+
+            <div class="btn-group">
+                <a href="https://bscscan.com/token/0x1Ca2fcD10477604F291525c54c65a6B3E7485303" target="_blank" class="btn btn-primary">View on BscScan</a>
+                <a href="https://pancakeswap.finance/swap?outputCurrency=0x1Ca2fcD10477604F291525c54c65a6B3E7485303" target="_blank" class="btn">Trade on PancakeSwap</a>
+                <a href="transparency.html" class="btn">Transparency Data</a>
+                <a href="https://github.com/aquacash" target="_blank" class="btn">GitHub Repo</a>
+            </div>
+        </section>
+
+        <div class="grid">
+            <div class="card">
+                <h3>Token Profile</h3>
+                <ul class="info-list">
+                    <li><span>Token Name</span> <span>Aqua Cash</span></li>
+                    <li><span>Token Symbol</span> <span>AQU</span></li>
+                    <li><span>Network</span> <span>BNB Smart Chain (BEP-20)</span></li>
+                    <li><span>Decimals</span> <span>18</span></li>
+                    <li><span>Total Supply</span> <span>28,000,000 AQU</span></li>
+                    <li><span>Buy Tax / Sell Tax</span> <span>0% / 0%</span></li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h3>Allocation & Lock Info</h3>
+                <ul class="info-list">
+                    <li><span>Locked Tokens</span> <span>10,000,000 AQU</span></li>
+                    <li><span>Lock Platform</span> <span>PinkSale Lock</span></li>
+                    <li><span>Lock Expiry</span> <span>May 2029</span></li>
+                    <li><span>Reward Allocation</span> <span>3,000,000 AQU</span></li>
+                    <li><span>Distribution Horizon</span> <span>48 Months</span></li>
+                    <li><span>Minting Capability</span> <span>None (Fixed Supply)</span></li>
+                </ul>
+            </div>
         </div>
 
-        <div class="contract-box" onclick="copyAddress()">
-          <strong>Official Contract Address</strong>
-          <code id="contract">0x1Ca2fcD10477604F291525c54c65a6B3E7485303</code>
-          <p class="hint">Click to copy the contract address</p>
+        <div class="grid" style="margin-top: 20px;">
+            <div class="card" style="grid-column: 1 / -1;">
+                <h3>Ecosystem & Reward Mechanics</h3>
+                <p style="color: var(--text-muted); font-size: 0.95rem; margin-top: 8px;">
+                    The reserved 3,000,000 AQU is allocated for long-term community incentives, ecosystem rewards, and staking mechanisms over a 48-month schedule (~750,000 AQU per year). This allocation is drawn directly from existing token reserves and does not generate additional tokens or alter the total supply.
+                </p>
+            </div>
         </div>
-      </div>
-    </section>
 
-    <section class="section">
-      <div class="grid">
-        <div class="stat-card">
-          <h3>28,000,000</h3>
-          <p>Total Supply</p>
-        </div>
-        <div class="stat-card">
-          <h3>10,000,000 AQU</h3>
-          <p>Tokens Locked</p>
-        </div>
-        <div class="stat-card">
-          <h3>0%</h3>
-          <p>Buy / Sell Tax</p>
-        </div>
-        <div class="stat-card">
-          <h3>3,000,000 AQU</h3>
-          <p>4-Year Reward Pool</p>
-        </div>
-      </div>
-    </section>
+        <footer>
+            <p>&copy; 2026 Aqua Cash (AQU). Built on BNB Smart Chain.</p>
+            <p>Official Contact: <a href="mailto:aqua.cash@tutamail.com">aqua.cash@tutamail.com</a> | <a href="contact.html">Contact Page</a></p>
+        </footer>
+    </div>
 
-    <section class="section two-col">
-      <div class="card">
-        <h2 class="section-title">About Aqua Cash</h2>
-        <p class="section-subtitle">
-          AQU is designed as a utility-focused token with a simple public profile and
-          clear blockchain visibility for users, holders, and reviewers.
-        </p>
-        <ul>
-          <li><strong>Efficient network:</strong> Built on BNB Smart Chain for fast and cost-effective transfers.</li>
-          <li><strong>Transparent structure:</strong> Public contract, public token activity, and verifiable lock records.</li>
-          <li><strong>Community direction:</strong> Focused on long-term growth through responsible expansion and visibility.</li>
-          <li><strong>Reward model:</strong> Ecosystem incentives are distributed from existing holdings, not from new minting.</li>
-        </ul>
-      </div>
-
-      <div class="card">
-        <div class="badge">Transparent Structure</div>
-        <h2 class="section-title">Project Facts</h2>
-        <ul class="clean-list">
-          <li>✅ <strong>Total Supply:</strong> 28,000,000 AQU</li>
-          <li>✅ <strong>Buy Tax:</strong> 0%</li>
-          <li>✅ <strong>Sell Tax:</strong> 0%</li>
-          <li>✅ <strong>Locked Tokens:</strong> 10,000,000 AQU</li>
-          <li>✅ <strong>Reward Pool:</strong> 3,000,000 AQU over 4 years</li>
-          <li>✅ <strong>Contract:</strong> Publicly viewable on BscScan</li>
-        </ul>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="card">
-        <h2 class="section-title">Token Lock Information</h2>
-        <p>
-          As part of the project's transparency commitment, <strong>10,000,000 AQU</strong>
-          have been locked through Pinksale. The lock record is public and extends until
-          <strong>May 2029</strong>.
-        </p>
-        <p>
-          🔒 <strong>Lock Record:</strong>
-          <a
-            href="https://www.pinksale.finance/pinklock/bsc/record/1674084"
-            target="_blank"
-            rel="noopener noreferrer"
-          >View Pinksale Lock Record</a>
-        </p>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="card">
-        <h2 class="section-title">4-Year Reward Allocation</h2>
-        <p>
-          A total of <strong>3,000,000 AQU</strong> has been reserved for ecosystem incentives,
-          staking rewards, and community growth over a <strong>48-month distribution period</strong>.
-        </p>
-        <p>
-          The planned release rate is approximately <strong>750,000 AQU per year</strong>,
-          <strong>62,500 AQU per month</strong>, and <strong>2,054 AQU per day</strong>.
-        </p>
-        <p>
-          This allocation comes from existing project holdings and does <strong>not</strong>
-          increase the total supply.
-        </p>
-      </div>
-    </section>
-
-    <section class="section two-col">
-      <div class="card">
-        <h2 class="section-title">Official Links</h2>
-        <ul class="clean-list">
-          <li>🔗 <strong>BscScan:</strong> <a href="https://bscscan.com/token/0x1Ca2fcD10477604F291525c54c65a6B3E7485303" target="_blank" rel="noopener noreferrer">View token contract</a></li>
-          <li>🔒 <strong>Pinksale Lock:</strong> <a href="https://www.pinksale.finance/pinklock/bsc/record/1674084" target="_blank" rel="noopener noreferrer">View lock record</a></li>
-          <li>🌐 <strong>GitHub:</strong> <a href="https://github.com/aquacash" target="_blank" rel="noopener noreferrer">github.com/aquacash</a></li>
-        </ul>
-      </div>
-
-      <div class="card">
-        <h2 class="section-title">Official Contact</h2>
-        <p>
-          For official inquiries, partnership requests, or project-related communication,
-          please use the contact channel below.
-        </p>
-        <ul class="clean-list">
-          <li>📧 <strong>Email:</strong> <a href="mailto:aqua.cash@tutamail.com">aqua.cash@tutamail.com</a></li>
-        </ul>
-      </div>
-    </section>
-
-    <footer class="footer">
-      © 2026 Aqua Cash Project. All rights reserved.
-    </footer>
-  </main>
-
-  <script>
-    function copyAddress() {
-      const addr = document.getElementById("contract").innerText;
-      navigator.clipboard.writeText(addr);
-      const toast = document.getElementById("copy-toast");
-      toast.style.visibility = "visible";
-      setTimeout(function () {
-        toast.style.visibility = "hidden";
-      }, 2000);
-    }
-  </script>
 </body>
 </html>
