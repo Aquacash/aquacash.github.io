@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transparency | Aqua Cash (AQU)</title>
+    <meta name="description" content="Public transparency information for Aqua Cash (AQU), including contract details, supply structure, lock records, and official references.">
+    <link rel="icon" type="image/png" href="AquaCash_Logo_200x200.png">
+    <style>
+        :root {
+            --bg-color: #0b0e14;
+            --card-bg: #151a23;
+            --accent-color: #00d2ff;
+            --accent-hover: #00a3cc;
+            --text-color: #e2e8f0;
+            --text-muted: #94a3b8;
+            --border-color: #1e293b;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            padding-bottom: 60px;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .logo-container img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+        }
+
+        .logo-container h1 {
+            font-size: 1.4rem;
+            color: #fff;
+            font-weight: 700;
+        }
+
+        nav {
+            display: flex;
+            gap: 20px;
+        }
+
+        nav a {
+            color: var(--text-muted);
+            text-decoration: none;
+            font-size: 0.95rem;
+            transition: color 0.2s;
+        }
+
+        nav a:hover, nav a.active {
+            color: var(--accent-color);
+        }
+
+        .hero {
+            padding: 45px 0 25px;
+        }
+
+        .hero h2 {
+            font-size: 2rem;
+            color: #fff;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            color: var(--text-muted);
+            max-width: 800px;
+            font-size: 1rem;
+        }
+
+        .card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 24px;
+            margin-top: 20px;
+        }
+
+        .card h3 {
+            color: #fff;
+            margin-bottom: 14px;
+            font-size: 1.15rem;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 8px;
+        }
+
+        .info-list {
+            list-style: none;
+        }
+
+        .info-list li {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            padding: 10px 0;
+            border-bottom: 1px dashed #1e293b;
+            font-size: 0.95rem;
+        }
+
+        .info-list li span:first-child {
+            color: var(--text-muted);
+            flex: 1;
+        }
+
+        .info-list li span:last-child {
+            color: var(--text-color);
+            font-weight: 500;
+            text-align: right;
+            flex: 1;
+        }
+
+        .full-width {
+            grid-column: 1 / -1;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin-top: 10px;
+        }
+
+        .section-note {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            margin-top: 8px;
+        }
+
+        .links {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-top: 8px;
+        }
+
+        .links a {
+            color: var(--accent-color);
+            text-decoration: none;
+            word-break: break-word;
+        }
+
+        .links a:hover {
+            color: var(--accent-hover);
+            text-decoration: underline;
+        }
+
+        footer {
+            margin-top: 50px;
+            padding-top: 20px;
+            border-top: 1px solid var(--border-color);
+            text-align: center;
+            color: var(--text-muted);
+            font-size: 0.85rem;
+        }
+
+        footer a {
+            color: var(--accent-color);
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo-container">
+                <img src="AquaCash_Logo_200x200.png" alt="Aqua Cash Logo">
+                <h1>Aqua Cash</h1>
+            </div>
+            <nav>
+                <a href="index.html">Overview</a>
+                <a href="transparency.html" class="active">Transparency</a>
+                <a href="contact.html">Contact</a>
+                <a href="whitepaper.md">Whitepaper</a>
+            </nav>
+        </header>
+
+        <section class="hero">
+            <h2>Transparency</h2>
+            <p>
+                Aqua Cash (AQU) is maintained with a focus on public on-chain visibility, fixed token structure,
+                and accessible project documentation. This page summarizes the core verifiable information related
+                to the token and project status.
+            </p>
+        </section>
+
+        <div class="grid">
+            <div class="card">
+                <h3>Project Status</h3>
+                <ul class="info-list">
+                    <li><span>Project Name</span><span>Aqua Cash</span></li>
+                    <li><span>Token Symbol</span><span>AQU</span></li>
+                    <li><span>Network</span><span>BNB Smart Chain</span></li>
+                    <li><span>Status</span><span>Active</span></li>
+                    <li><span>Whitepaper</span><span>Published / Available</span></li>
+                    <li><span>Development Repository</span><span>Publicly accessible via GitHub</span></li>
+                    <li><span>Audit Status</span><span>Planned</span></li>
+                    <li><span>Team Structure</span><span>Privacy-respecting / non-public team model</span></li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h3>Contract Information</h3>
+                <ul class="info-list">
+                    <li><span>Official Contract Address</span><span>0x1Ca2fcD10477604F291525c54c65a6B3E7485303</span></li>
+                    <li><span>Contract Visibility</span><span>Publicly viewable on BscScan</span></li>
+                    <li><span>Contract Verification</span><span>Verified on BscScan</span></li>
+                    <li><span>Token Activity</span><span>Publicly viewable on-chain</span></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="grid">
+            <div class="card">
+                <h3>Supply Structure</h3>
+                <ul class="info-list">
+                    <li><span>Total Supply</span><span>28,000,000 AQU</span></li>
+                    <li><span>Additional Minting</span><span>None beyond the deployed supply</span></li>
+                    <li><span>Buy Tax</span><span>0%</span></li>
+                    <li><span>Sell Tax</span><span>0%</span></li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h3>Locked Tokens</h3>
+                <ul class="info-list">
+                    <li><span>Locked Amount</span><span>10,000,000 AQU</span></li>
+                    <li><span>Lock Platform</span><span>PinkSale</span></li>
+                    <li><span>Lock Record</span><span>Publicly verifiable</span></li>
+                    <li><span>Current Lock Term</span><span>Until May 2029</span></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="grid">
+            <div class="card full-width">
+                <h3>Reward Allocation</h3>
+                <ul class="info-list">
+                    <li><span>Reserved Allocation</span><span>3,000,000 AQU</span></li>
+                    <li><span>Intended Use</span><span>Ecosystem incentives, staking-related rewards, and community growth</span></li>
+                    <li><span>Distribution Period</span><span>48 months</span></li>
+                    <li><span>Source of Allocation</span><span>Existing project holdings</span></li>
+                    <li><span>Supply Impact</span><span>Does not increase total supply</span></li>
+                </ul>
+                <p class="section-note">
+                    The projected release rate is approximately 750,000 AQU per year, 62,500 AQU per month,
+                    and 2,054 AQU per day over the planned distribution period.
+                </p>
+            </div>
+
+            <div class="card full-width">
+                <h3>Official References</h3>
+                <div class="links">
+                    <a href="https://bscscan.com/token/0x1Ca2fcD10477604F291525c54c65a6B3E7485303" target="_blank">BscScan Token Page</a>
+                    <a href="https://pancakeswap.finance/swap?outputCurrency=0x1Ca2fcD10477604F291525c54c65a6B3E7485303" target="_blank">PancakeSwap</a>
+                    <a href="https://github.com/aquacash" target="_blank">GitHub Repository</a>
+                    <a href="whitepaper.md">Whitepaper</a>
+                    <a href="contact.html">Contact Page</a>
+                </div>
+            </div>
+
+            <div class="card full-width">
+                <h3>Disclosure Note</h3>
+                <p class="section-note">
+                    Aqua Cash follows a privacy-respecting development model while prioritizing verifiable on-chain transparency,
+                    public token records, and accessible project documentation. The project aims to provide reviewers, users,
+                    and token holders with sufficient public information through blockchain records and official documentation.
+                </p>
+            </div>
+        </div>
+
+        <footer>
+            <p>&copy; 2026 Aqua Cash (AQU). Built on BNB Smart Chain.</p>
+            <p>Official Contact: <a href="mailto:aqua.cash@tutamail.com">aqua.cash@tutamail.com</a></p>
+        </footer>
+    </div>
+</body>
+</html>
